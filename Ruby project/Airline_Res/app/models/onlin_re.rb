@@ -1,0 +1,2 @@
+class OnlinRe < ApplicationRecord
+end

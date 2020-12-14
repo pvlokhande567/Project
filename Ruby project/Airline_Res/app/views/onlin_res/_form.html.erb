@@ -1,0 +1,37 @@
+<%= form_for(onlin_re) do |f| %>
+  <% if onlin_re.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(onlin_re.errors.count, "error") %> prohibited this onlin_re from being saved:</h2>
+
+      <ul>
+      <% onlin_re.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Journey_Type %>
+    <%= f.text_field :Journey_Type %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Departure_City %>
+    <%= f.text_field :Departure_City %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Arrival_City %>
+    <%= f.text_field :Arrival_City %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Departure_Date %>
+    <%= f.date_select :Departure_Date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

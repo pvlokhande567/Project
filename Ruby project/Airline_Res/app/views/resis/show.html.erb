@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fisrt name:</strong>
+  <%= @resi.Fisrt_Name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @resi.Last_Name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @resi.Email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @resi.Password %>
+</p>
+
+<p>
+  <strong>Confirm password:</strong>
+  <%= @resi.Confirm_Password %>
+</p>
+
+<%= link_to 'Edit', edit_resi_path(@resi) %> |
+<%= link_to 'Back', resis_path %>

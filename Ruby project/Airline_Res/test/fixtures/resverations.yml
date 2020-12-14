@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  First_Name: MyString
+  Last_Name: MyString
+  Date_Of_Birth: 2020-11-09
+  Seat_Request: MyString
+
+two:
+  First_Name: MyString
+  Last_Name: MyString
+  Date_Of_Birth: 2020-11-09
+  Seat_Request: MyString

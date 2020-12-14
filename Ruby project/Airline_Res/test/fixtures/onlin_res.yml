@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Journey_Type: MyString
+  Departure_City: MyString
+  Arrival_City: MyString
+  Departure_Date: 2020-11-09
+
+two:
+  Journey_Type: MyString
+  Departure_City: MyString
+  Arrival_City: MyString
+  Departure_Date: 2020-11-09

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @resveration.First_Name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @resveration.Last_Name %>
+</p>
+
+<p>
+  <strong>Date of birth:</strong>
+  <%= @resveration.Date_Of_Birth %>
+</p>
+
+<p>
+  <strong>Seat request:</strong>
+  <%= @resveration.Seat_Request %>
+</p>
+
+<%= link_to 'Edit', edit_resveration_path(@resveration) %> |
+<%= link_to 'Back', resverations_path %>

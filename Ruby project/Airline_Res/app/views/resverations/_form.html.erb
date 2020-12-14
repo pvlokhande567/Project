@@ -1,0 +1,37 @@
+<%= form_for(resveration) do |f| %>
+  <% if resveration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(resveration.errors.count, "error") %> prohibited this resveration from being saved:</h2>
+
+      <ul>
+      <% resveration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :First_Name %>
+    <%= f.text_field :First_Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Last_Name %>
+    <%= f.text_field :Last_Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Date_Of_Birth %>
+    <%= f.date_select :Date_Of_Birth %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Seat_Request %>
+    <%= f.text_field :Seat_Request %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

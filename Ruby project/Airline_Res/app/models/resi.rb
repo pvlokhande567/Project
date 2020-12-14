@@ -1,0 +1,2 @@
+class Resi < ApplicationRecord
+end

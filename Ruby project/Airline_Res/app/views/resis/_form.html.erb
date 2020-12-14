@@ -1,0 +1,42 @@
+<%= form_for(resi) do |f| %>
+  <% if resi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(resi.errors.count, "error") %> prohibited this resi from being saved:</h2>
+
+      <ul>
+      <% resi.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Fisrt_Name %>
+    <%= f.text_field :Fisrt_Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Last_Name %>
+    <%= f.text_field :Last_Name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Email %>
+    <%= f.text_field :Email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Password %>
+    <%= f.text_field :Password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :Confirm_Password %>
+    <%= f.text_field :Confirm_Password %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

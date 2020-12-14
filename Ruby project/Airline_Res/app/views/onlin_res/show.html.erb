@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Journey type:</strong>
+  <%= @onlin_re.Journey_Type %>
+</p>
+
+<p>
+  <strong>Departure city:</strong>
+  <%= @onlin_re.Departure_City %>
+</p>
+
+<p>
+  <strong>Arrival city:</strong>
+  <%= @onlin_re.Arrival_City %>
+</p>
+
+<p>
+  <strong>Departure date:</strong>
+  <%= @onlin_re.Departure_Date %>
+</p>
+
+<%= link_to 'Edit', edit_onlin_re_path(@onlin_re) %> |
+<%= link_to 'Back', onlin_res_path %>

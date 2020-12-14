@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Cancels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>E tickit no</th>
+      <th>Integer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cancels.each do |cancel| %>
+      <tr>
+        <td><%= cancel.E_Tickit_No %></td>
+        <td><%= cancel.integer %></td>
+        <td><%= link_to 'Show', cancel %></td>
+        <td><%= link_to 'Edit', edit_cancel_path(cancel) %></td>
+        <td><%= link_to 'Destroy', cancel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cancel', new_cancel_path %>

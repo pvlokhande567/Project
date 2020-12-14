@@ -1,0 +1,2 @@
+class Resveration < ApplicationRecord
+end

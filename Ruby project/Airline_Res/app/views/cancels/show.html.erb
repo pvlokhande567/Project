@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>E tickit no:</strong>
+  <%= @cancel.E_Tickit_No %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @cancel.integer %>
+</p>
+
+<%= link_to 'Edit', edit_cancel_path(@cancel) %> |
+<%= link_to 'Back', cancels_path %>

@@ -1,0 +1,2 @@
+module OnlinResHelper
+end
